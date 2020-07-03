@@ -1,0 +1,66 @@
+#### Input file for code selfe  ##### 
+
+# Numerical parameters
+points 1000   # number of points for the representation of functions
+lagpoints 30 # number of points of the Lagrange mesh
+radius 30    # radius for the representation of functions (fm)
+lag_box 30   # size of the Lagrange mesh (fm)
+
+
+# Parameters for the definition of resonances 
+numpoles 30  # number of resonances 
+gamma 0.01   # width of the resonances (imaginary part of the poles) (fm)
+delta_e 0.1   # distance between resonances (MeV)
+
+# Index to mean field potential and neutron-nucleus coupling
+mean_field 0
+coupling 1
+
+
+# Potentials and couplings
+
+Potentials-Start
+
+id 0                                                     
+RealVolume   99.0
+ImaginaryVolume   0.
+RealSpinOrbit     	0.
+ImaginarySpinOrbit   0.
+RealSurface  0.
+ImaginarySurface   0.
+RadiusRealVolume       1.2
+RadiusCoulomb          1.2                     
+RadiusImaginaryVolume  1.2                        
+DifusivityRealVolume 0.65                     
+DifusivityImaginaryVolume  0.65             	      	
+RadiusSpinOrbit 1.2                             	    
+DifusivitySpinOrbit 	0.65                                  
+RadiusImaginarySurface   1.2                    
+DifusivityImaginarySurface  0.65 
+
+***************
+
+id 1                                                     
+RealVolume   0.0
+ImaginaryVolume   0.
+RealSpinOrbit     	0.
+ImaginarySpinOrbit   0.
+RealSurface  10.
+ImaginarySurface   0.
+RadiusRealVolume       1.2
+RadiusCoulomb          1.2                     
+RadiusImaginaryVolume  1.2                        
+DifusivityRealVolume 0.65                     
+DifusivityImaginaryVolume  0.65             	      	
+RadiusSpinOrbit 1.2                             	    
+DifusivitySpinOrbit 	0.65                                  
+RadiusImaginarySurface   1.2                    
+DifusivityImaginarySurface  0.65 
+
+***************
+
+
+
+Potentials-End
+
+
